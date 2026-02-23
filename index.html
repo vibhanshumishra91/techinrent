@@ -3,60 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional Eoboot homepage for LinkedIn rentals, account rental, unban and unrestriction services.">
-    <meta name="keywords" content="LinkedIn rental, LinkedIn account rental, LinkedIn unban, LinkedIn unrestriction, techinrent, eoboot, professional services">
-    <title>Eoboot Home</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Eoboot Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #003366, #ffcc00);
+            color: white;
+        }
+        header {
+            padding: 10px;
+            text-align: center;
+            animation: fadeIn 2s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .hero {
+            padding: 50px;
+            text-align: center;
+        }
+        .services, .pricing, .testimonials, .contact {
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        @media(max-width: 600px) {
+            body {
+                font-size: 14px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- Hero Section -->
-    <section id="hero">
-        <h1>Welcome to Eoboot</h1>
-        <p>Your trusted professional services for LinkedIn rentals and unban support.</p>
-        <a href="#contact" class="button">Get Started</a>
-    </section>
 
-    <!-- Services Section -->
-    <section id="services">
-        <h2>Our Services</h2>
-        <ul>
-            <li>LinkedIn Account Rental</li>
-            <li>LinkedIn Unban & Unrestriction Support</li>
-        </ul>
-    </section>
+<header>
+    <h1>Welcome to Eoboot</h1>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
-    <!-- Features Section -->
-    <section id="features">
-        <h2>Features</h2>
-        <p>We offer reliable and fast solutions for all your LinkedIn needs.</p>
-    </section>
+<section class="hero">
+    <h2>Your Solution for LinkedIn Account Rental and Unban Support</h2>
+</section>
 
-    <!-- Pricing Section -->
-    <section id="pricing">
-        <h2>Pricing</h2>
-        <p>Competitive pricing for our professional services.</p>
-    </section>
+<section id="services" class="services">
+    <h2>Our Services</h2>
+    <p>LinkedIn account rental and unban support.</p>
+</section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials">
-        <h2>What Our Clients Say</h2>
-        <p>"Eoboot helped me regain access to my LinkedIn account quickly!" - Satisfied Customer</p>
-    </section>
+<section id="pricing" class="pricing">
+    <h2>Pricing Plans</h2>
+    <p>Check our competitive pricing plans.</p>
+</section>
 
-    <!-- Contact Form Section -->
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+<section id="testimonials" class="testimonials">
+    <h2>Testimonials</h2>
+    <p>What our clients say about us.</p>
+</section>
 
-    <script src="scripts.js"></script>
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+</section>
+
 </body>
 </html>
